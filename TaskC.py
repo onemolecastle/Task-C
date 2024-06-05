@@ -27,7 +27,7 @@ def ec2_logging():
 	    for instance in instance['Instances']:
         	instanceList.append(instance['InstanceId'])
 
-print(f"Found {len(instanceList)} instances")
+print(f"Found len(instanceList) instances")
 
 ec2_logging
 
