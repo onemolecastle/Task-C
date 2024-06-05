@@ -6,7 +6,7 @@
 import boto3
 
 
-def lambda_handler(event, context):
+def ec2_logging():
 
    # Impprovement: we can also use the boto3 session which allows us to load profiles directly and pass credentials from the ~/.aws/credentials file
    # session = boto3.Session(profile_name='EC2_logging')
@@ -29,5 +29,5 @@ def lambda_handler(event, context):
 
 print(f"Found {len(instanceList)} instances")
 
-lambda_handler
+ec2_logging
 
